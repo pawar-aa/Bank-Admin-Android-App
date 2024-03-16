@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10sp">
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="New User"
+            android:layout_margin="10sp"/>
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Transactions"
+            android:layout_margin="10sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_below="@id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/marquee_text"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_below="@id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:layout_above="@+id/tvv"
+        />
+
+    <TextView
+        android:id="@+id/tvv"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:text="@string/copyrights"/>
+
+</RelativeLayout>

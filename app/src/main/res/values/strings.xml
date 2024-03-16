@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BankApp</string>
+    <string name="marquee_text">Welcome to National Bank! Now get the safest place to park your savings by registering an account with us. Happy Banking!</string>
+    <string name="copyrights">© 2024, Aashay Pawar. All rights reserved.</string>
+</resources>

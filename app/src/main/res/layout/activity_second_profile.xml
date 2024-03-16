@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20sp"
+    tools:context=".SecondActivityProfile">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight = "1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:textSize="30sp"
+            android:text="ID"/>
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:textSize="50sp"
+            android:textColor="@color/black"
+            android:text="Name"/>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7"
+            android:textSize="30sp"
+            android:text="Email"/>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:textSize="50sp"
+            android:textColor="#0f9d58"
+            android:text="Balance"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.7"
+        android:textSize="20sp"
+        android:text="send money"/>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight = "1"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/lv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:text="@string/copyrights"/>
+</LinearLayout>
